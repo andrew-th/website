@@ -1,7 +1,7 @@
-function ContainerExample() {
+function Home() {
   return (
-    <div>Content</div>
+    <div>A fancy homepage</div>
   );
 }
 
-export default ContainerExample;
+export default Home;

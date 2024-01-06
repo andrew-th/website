@@ -1,7 +1,11 @@
 import './App.css';
+import './css/pico.min.css';
 import Navbar from './Navbar';
 import Home from './Home';
-import './css/pico.min.css';
+import About from './About';
+import Projects from './Projects';
+import Experience from './Experience';
+import Links from './Links';
 
 function App() {
   return (
@@ -9,6 +13,10 @@ function App() {
       <Navbar />
       <div className='Content'>
         <Home />
+        <About />
+        <Projects />
+        <Experience />
+        <Links />
       </div>
     </div>
   );
