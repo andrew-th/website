@@ -1,7 +1,7 @@
 import './App.css';
 import NavbarExample from './Navbar';
 import Home from './Home';
-import 'bootstrap/dist/css/bootstrap.min.css';
+import './css/pico.min.css'
 
 function App() {
   return (
