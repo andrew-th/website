@@ -1,3 +1,8 @@
+# Andrew's Personal Website
+
+This website is a single-page React app. Styles are from the Pico CSS framework.
+See the info below to run the app locally.
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
