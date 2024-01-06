@@ -1,18 +1,20 @@
-function NavbarExample() {
+function Navbar() {
     return (
         <div>
             <nav>
                 <ul>
-                    <li><strong>Brand</strong></li>
+                    <li><strong><a href="#">Andrew Heare</a></strong></li>
+                    <li><a href="#">Link</a></li>
+                    <li><a href="#">Link</a></li>
                 </ul>
                 <ul>
-                    <li><a href="#">Link</a></li>
-                    <li><a href="#">Link</a></li>
-                    <li><a href="#" role="button">Button</a></li>
+                    <li>Github</li>
+                    <li>OpenStreetMap</li>
+                    <li>LinkedIn</li>
                 </ul>
             </nav>
         </div>
     );
 }
 
-export default NavbarExample;
+export default Navbar;
