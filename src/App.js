@@ -1,25 +1,27 @@
-import './App.css';
 import './css/pico.min.css';
+import './App.css';
+import { Routes, Route } from "react-router-dom"
 import Navbar from './Navbar';
-import Home from './Home';
-import About from './About';
-import Projects from './Projects';
-import Experience from './Experience';
-import Links from './Links';
+import Home from "./Home"
+import About from "./About"
+import Projects from "./Projects"
+import Experience from "./Experience"
+import Links from "./Links"
 
 function App() {
   return (
-    <div className='App'>
-      <Navbar />
-      <div className='Content'>
-        <Home />
-        <About />
-        <Projects />
-        <Experience />
-        <Links />
-      </div>
+    <div className="App">
+      <Navbar/>
+      <Routes>
+        <Route path="/" element={ <Home/> } />
+        <Route path="home" element={ <Home/> } />
+        <Route path="about" element={ <About/> } />
+        <Route path="projects" element={ <Projects/> } />
+        <Route path="experience" element={ <Experience/> } />
+        <Route path="links" element={ <Links/> } />
+      </Routes>
     </div>
-  );
+  )
 }
 
-export default App;
+export default App
