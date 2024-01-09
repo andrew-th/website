@@ -7,8 +7,6 @@ function Navbar() {
                 <ul>
                     <li><strong><Link to="/">Andrew Heare</Link></strong></li>
                     <li><Link to="about">About</Link></li>
-                    <li><Link to="projects">Projects</Link></li>
-                    <li><Link to="experience">Experience</Link></li>
                     <li><Link to="links">Links</Link></li>
                 </ul>
                 <ul>
