@@ -1,10 +1,11 @@
+import React from 'react';
 import './css/pico.min.css';
 import './App.css';
-import { Routes, Route } from "react-router-dom"
+import { Routes, Route } from "react-router-dom";
 import Navbar from './Navbar';
-import Home from "./Home"
+import Home from "./Home";
 import Projects from './Projects';
-import Links from "./Links"
+import Links from "./Links";
 
 function App() {
   return (

@@ -37,6 +37,18 @@
   }
 }
 
+body {
+  background-color: beige !important;
+}
+
+article {
+  background-color: beige !important;
+}
+
+a {
+  color: green !important;
+}
+
 nav ol,
 nav ul {
   align-items: center;
