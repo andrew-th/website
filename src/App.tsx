@@ -6,6 +6,7 @@ import Navbar from './Navbar';
 import Home from "./Home";
 import Projects from './Projects';
 import Links from "./Links";
+import Playground from './Playground';
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
         <Route path="home" element={ <Home/> } />
         <Route path="projects" element={ <Projects/> } />
         <Route path="links" element={ <Links/> } />
+        <Route path="playground" element={ <Playground/> } />
       </Routes>
     </div>
   )

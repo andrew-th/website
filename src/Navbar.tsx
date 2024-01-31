@@ -9,6 +9,7 @@ function Navbar() {
                     <li><strong><Link to="/">Andrew Heare</Link></strong></li>
                     <li><Link to="projects">Projects</Link></li>
                     <li><Link to="links">Links</Link></li>
+                    <li><Link to="playground">Playground</Link></li>
                 </ul>
                 <ul>
                     <li><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" className="bi bi-github" viewBox="0 0 16 16">
