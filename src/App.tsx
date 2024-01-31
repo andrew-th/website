@@ -1,57 +1,54 @@
 import React from 'react';
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import './App.css';
+import { BrowserRouter as Router, Route, Routes, Link } from 'react-router-dom';
 import { AppBar, Toolbar, Typography, Container, CssBaseline, ThemeProvider, createTheme } from '@material-ui/core';
-import { AccountCircle } from '@material-ui/icons';
-import Playground from './Playground';
+import Home from './Home';
 import Projects from './Projects';
 import Links from './Links';
+import Playground from './Playground';
 
-const theme = createTheme();
+const theme = createTheme({
+  palette: {
+    primary: {
+      main: '#336600', // Green color
+    },
+    secondary: {
+      main: '#f5f5dc', // Beige color
+    },
+  },
+});
 
-const Home: React.FC = () => (
-  <Container>
-    <Typography variant="h4" component="h2" gutterBottom>
-      Welcome to my website!
-    </Typography>
-    <Typography variant="body1" paragraph>
-      This is a basic Material-UI and TypeScript template with routing for your website.
-    </Typography>
-  </Container>
-);
-
-const About: React.FC = () => (
-  <Container>
-    <Typography variant="h4" component="h2" gutterBottom>
-      About Us
-    </Typography>
-    <Typography variant="body1" paragraph>
-      Learn more about our website and team.
-    </Typography>
-  </Container>
-);
-
-const App: React.FC = () => {
+function App() {
   return (
     <ThemeProvider theme={theme}>
       <CssBaseline />
       <Router>
-        <AppBar position="static">
+        <AppBar position="static" style={{ background: 'transparent', boxShadow: 'none' }}>
           <Toolbar>
-            <Typography variant="h6">Material-UI TypeScript Template</Typography>
-            <div style={{ flexGrow: 1 }}></div>
-            <AccountCircle />
+            <Link to="home" style={{ fontSize: '50px', color: 'green', marginRight: '20px', textDecoration: 'none' }}>
+              Andrew Heare
+            </Link>
+            <Link to="projects" style={{ color: 'green', marginRight: '20px', textDecoration: 'none' }}>
+              Projects
+            </Link>
+            <Link to="links" style={{ color: 'green', marginRight: '20px', textDecoration: 'none' }}>
+              Links
+            </Link>
+            <Link to="playground" style={{ color: 'green', marginRight: '20px', textDecoration: 'none' }}>
+              Playground
+            </Link>
           </Toolbar>
         </AppBar>
         <Routes>
-          <Route path="/" element={ <Home/> } />
-          <Route path="home" element={ <Home/> } />
-          <Route path="projects" element={ <Projects/> } />
-          <Route path="links" element={ <Links/> } />
-          <Route path="playground" element={ <Playground/> } />
+          <Route path="/" element={<Home />} />
+          <Route path="home" element={<Home />} />
+          <Route path="projects" element={<Projects />} />
+          <Route path="links" element={<Links />} />
+          <Route path="playground" element={<Playground />} />
         </Routes>
       </Router>
     </ThemeProvider>
   );
 };
 
-export default App;
+export default App

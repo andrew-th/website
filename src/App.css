@@ -41,18 +41,3 @@ body {
   background-color: beige !important;
 }
 
-article {
-  background-color: beige !important;
-}
-
-a {
-  color: green !important;
-}
-
-nav ol,
-nav ul {
-  align-items: center;
-  margin-bottom: 0;
-  padding: 0 1em !important; /* I changed this from 0 */
-  list-style: none;
-}

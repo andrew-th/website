@@ -1,14 +1,18 @@
+import { Container, Typography } from "@material-ui/core";
 import React from "react";
 
+
 function Home() {
-    return (
-      <div>
-        <p>
-        <h3>Hello!</h3>
+  return (
+    <Container>
+      <Typography variant="h4" component="h2" gutterBottom>
+        Hello!
+      </Typography>
+      <Typography variant="body1" paragraph>
         I'm Andrew, and I'm interested in the intersection between maps, data, and web applications.
-        </p>
-      </div>
-    );
-  }
+      </Typography>
+    </Container>
+  )
+}
   
-  export default Home;
+export default Home
